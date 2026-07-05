@@ -639,7 +639,7 @@ Application::Application(int& argc, char** argv) : QApplication(argc, argv)
 
         // Theming
         m_settings->registerSetting("IconTheme", QString());
-        m_settings->registerSetting("ApplicationTheme", QString());
+        m_settings->registerSetting("ApplicationTheme", QString("material-dark"));
         m_settings->registerSetting("BackgroundCat", QString("kitteh"));
 
         // Remembered state

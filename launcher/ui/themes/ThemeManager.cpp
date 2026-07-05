@@ -30,6 +30,7 @@
 #include "ui/themes/CatPack.h"
 #include "ui/themes/CustomTheme.h"
 #include "ui/themes/DarkTheme.h"
+#include "ui/themes/MaterialTheme.h"
 #include "ui/themes/SystemTheme.h"
 
 #include "Application.h"
@@ -138,6 +139,9 @@ void ThemeManager::initializeWidgets()
     auto darkThemeId = addTheme(std::make_unique<DarkTheme>());
     themeDebugLog() << "Loading Built-in Theme:" << darkThemeId;
     themeDebugLog() << "Loading Built-in Theme:" << addTheme(std::make_unique<BrightTheme>());
+
+    themeDebugLog() << "Loading Built-in Theme:" << addTheme(std::make_unique<MaterialTheme>("material-dark", QObject::tr("Material Dark"), ":/themes/material_dark/material.qss", ":/themes/material_dark/icons", true));
+    themeDebugLog() << "Loading Built-in Theme:" << addTheme(std::make_unique<MaterialTheme>("material-light", QObject::tr("Material Light"), ":/themes/material_light/material.qss", ":/themes/material_light/icons", false));
 
     themeDebugLog() << "<> Initializing System Widget Themes";
     QStringList styles = QStyleFactory::keys();
