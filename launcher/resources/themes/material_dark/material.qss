@@ -1474,3 +1474,120 @@ QRadioButton::indicator:focus {
 QCheckBox::indicator:focus {
   background-color: rgba(68, 138, 255, 0.2);
  }
+/* ============================================================
+   PrismLauncher Material Theme Overrides
+   Appended after the qt-material base QSS
+   ============================================================ */
+
+/* --- PageContainer sidebar --- */
+PageView, .PageView {
+    background: transparent;
+}
+PageView::item, .PageView::item {
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin: 1px 4px;
+}
+PageView::item:selected, .PageView::item:selected {
+    background: palette(highlight);
+    color: palette(highlighted-text);
+}
+
+/* --- WideBar / ActionButton toolbar --- */
+WideBar, .WideBar {
+    spacing: 0px;
+    padding: 2px 4px;
+}
+ActionButton, .ActionButton {
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin: 1px;
+    text-align: left;
+}
+ActionButton:hover, .ActionButton:hover {
+    background: palette(highlight);
+    color: palette(highlighted-text);
+}
+ActionButton:pressed, .ActionButton:pressed {
+    background: palette(mid);
+}
+
+/* --- ModListView (mod lists) --- */
+ModListView, .ModListView {
+    border: 1px solid palette(mid);
+    border-radius: 4px;
+}
+ModListView::item, .ModListView::item {
+    padding: 4px 6px;
+}
+
+/* --- LogView (console output) --- */
+LogView, .LogView {
+    border: 1px solid palette(mid);
+    border-radius: 4px;
+    padding: 4px;
+}
+
+/* --- VersionSelectWidget --- */
+VersionSelectWidget {
+    border: 1px solid palette(mid);
+    border-radius: 4px;
+}
+
+/* --- ModFilterWidget --- */
+ModFilterWidget > QTabBar::tab {
+    padding: 6px 12px;
+    border-radius: 4px 4px 0 0;
+}
+ModFilterWidget > QTabBar::tab:selected {
+    background: palette(window);
+    border-bottom: 2px solid palette(highlight);
+}
+
+/* --- ProgressWidget / SubTaskProgressBar --- */
+ProgressWidget, SubTaskProgressBar {
+    border: none;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+/* --- InstanceView background --- */
+InstanceView, .InstanceView {
+    background: transparent;
+    border: none;
+}
+
+/* --- Setup Wizard --- */
+SetupWizard, .SetupWizard {
+    background: palette(window);
+}
+#languagePage, #javaPage {
+    background: transparent;
+}
+
+/* --- Instance window --- */
+InstanceWindow {
+    background: palette(window);
+}
+
+/* --- Edit field focus styling --- */
+QLineEdit:focus, QTextEdit:focus, QPlainTextEdit:focus {
+    border: 2px solid palette(highlight);
+}
+
+/* --- Category headers in list views --- */
+QTreeView::branch:has-siblings:!adjoins-item,
+QTreeView::branch:has-siblings:adjoins-item,
+QTreeView::branch:!has-children:!has-siblings {
+    border: none;
+}
+
+/* --- Smooth scrollbars for consistency --- */
+QScrollBar:horizontal, QScrollBar:vertical {
+    border: none;
+}
+QScrollBar::add-page, QScrollBar::sub-page {
+    background: none;
+}
+

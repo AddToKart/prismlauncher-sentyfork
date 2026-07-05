@@ -91,33 +91,33 @@ QPalette MaterialTheme::colorScheme()
     QPalette pal;
 
     if (m_dark) {
-        pal.setColor(QPalette::Window, QColor(38, 38, 38));
+        pal.setColor(QPalette::Window, QColor(48, 48, 48));
         pal.setColor(QPalette::WindowText, QColor(224, 224, 224));
         pal.setColor(QPalette::Base, QColor(30, 30, 30));
         pal.setColor(QPalette::AlternateBase, QColor(42, 42, 42));
-        pal.setColor(QPalette::ToolTipBase, QColor(66, 66, 66));
-        pal.setColor(QPalette::ToolTipText, QColor(224, 224, 224));
+        pal.setColor(QPalette::ToolTipBase, QColor(97, 97, 97));
+        pal.setColor(QPalette::ToolTipText, QColor(255, 255, 255));
         pal.setColor(QPalette::Text, QColor(224, 224, 224));
-        pal.setColor(QPalette::Button, QColor(38, 38, 38));
+        pal.setColor(QPalette::Button, QColor(48, 48, 48));
         pal.setColor(QPalette::ButtonText, QColor(224, 224, 224));
         pal.setColor(QPalette::BrightText, Qt::red);
-        pal.setColor(QPalette::Link, QColor(100, 130, 230));
-        pal.setColor(QPalette::Highlight, QColor(66, 133, 244));
+        pal.setColor(QPalette::Link, QColor(66, 165, 245));
+        pal.setColor(QPalette::Highlight, QColor(66, 165, 245));
         pal.setColor(QPalette::HighlightedText, Qt::white);
         pal.setColor(QPalette::PlaceholderText, QColor(140, 140, 140));
     } else {
         pal.setColor(QPalette::Window, QColor(250, 250, 250));
-        pal.setColor(QPalette::WindowText, QColor(30, 30, 30));
+        pal.setColor(QPalette::WindowText, QColor(33, 33, 33));
         pal.setColor(QPalette::Base, QColor(255, 255, 255));
         pal.setColor(QPalette::AlternateBase, QColor(245, 245, 245));
-        pal.setColor(QPalette::ToolTipBase, QColor(66, 66, 66));
-        pal.setColor(QPalette::ToolTipText, QColor(224, 224, 224));
-        pal.setColor(QPalette::Text, QColor(30, 30, 30));
+        pal.setColor(QPalette::ToolTipBase, QColor(97, 97, 97));
+        pal.setColor(QPalette::ToolTipText, QColor(255, 255, 255));
+        pal.setColor(QPalette::Text, QColor(33, 33, 33));
         pal.setColor(QPalette::Button, QColor(250, 250, 250));
-        pal.setColor(QPalette::ButtonText, QColor(30, 30, 30));
+        pal.setColor(QPalette::ButtonText, QColor(33, 33, 33));
         pal.setColor(QPalette::BrightText, Qt::red);
-        pal.setColor(QPalette::Link, QColor(26, 115, 232));
-        pal.setColor(QPalette::Highlight, QColor(66, 133, 244));
+        pal.setColor(QPalette::Link, QColor(25, 118, 210));
+        pal.setColor(QPalette::Highlight, QColor(25, 118, 210));
         pal.setColor(QPalette::HighlightedText, Qt::white);
         pal.setColor(QPalette::PlaceholderText, QColor(180, 180, 180));
     }
